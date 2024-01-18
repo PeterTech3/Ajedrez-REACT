@@ -1,0 +1,101 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  section{
+    display: grid;
+    grid-template-columns: repeat(8, 90px); 
+    grid-template-rows: repeat(8, 90px);
+    border: 1px solid black;
+  }
+  
+  h1{
+    font-size: 30px;
+    margin: 30px;
+  }
+  
+  .black{
+    background-color: black;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .white{
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .turn {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    width: fit-content;
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    pointer-events: none;
+    border-color: transparent;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .is-selected {
+    color: #fff;
+    background: #09f;
+    height: 90px;
+    width: 900px;
+    padding-top: 15px;
+  }
+  
+  .winner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .winner .text {
+    background: #111;
+    height: 300px;
+    width: 320px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+  }
+
+  .winner .win {
+    margin: 0 auto;
+    width: fit-content;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  button{
+    padding: 10px;
+    border-radius: 10px;
+  }
